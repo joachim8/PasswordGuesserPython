@@ -41,7 +41,7 @@ Les combinaisons L33T prises en compte sont :
 
 - Génération de mots de passe basée sur les options choisies
 - Affichage du nombre de combinaisons possibles
-- Exemple : 'J04EL14.-S23'
+- Exemple : 'J04EL14.-S23' 
 ## Structure du code
 
 Le code est implémenté en utilisant la programmation orientée objet. Voici les principaux fichiers et classes utilisés :
