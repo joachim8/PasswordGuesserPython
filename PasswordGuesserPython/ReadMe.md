@@ -55,18 +55,25 @@ Le projet utilise plusieurs concepts de la programmation orientée objet :
 
 - Polymorphism : **Def**: Le polymorphisme permet à des objets de différentes classes de répondre de manière différente à une même méthode. Cela signifie que vous pouvez utiliser une même méthode sur des objets de classes différentes et obtenir des résultats différents en fonction de la classe réelle de chaque objet.
 				 **Lien**: Entre la classe `AllSpecChar` et la class `Commonchar` elles utilisent toutes les deux une méthodes hérités de `CheckCaractere` mais 					ne renvoie pas au même résultat.
+  
 - Encapsulation : **Def**: L'encapsulation est un concept qui consiste à regrouper les données et les méthodes qui les manipulent en une seule entité, appelée classe. L'encapsulation permet de cacher les détails internes de la classe et de fournir une interface publique pour interagir avec l'objet. Cela permet de garantir l'intégrité des données et de contrôler l'accès à celles-ci. 
-				  **Lien**: Le constructeur `__init__` de la classe `CheckDate` qui est en mode
+				  **Lien**: Le constructeur `__init__` de la classe `CheckDate` qui est en mode privé.
+  
 - Héritage : **Def**:  L'héritage est un concept de la programmation orientée objet qui permet à une classe d'hériter des attributs et des méthodes d'une classe parente. La classe héritière, appelée sous-classe, peut étendre ou modifier le comportement de la classe parente, appelée superclasse. L'héritage facilite la réutilisation du code et permet de créer des hiérarchies de classes.
 			**Lien**: La classe `CommonSpecialCharacters` hérite de la classe `SpecialCharacters`.
+  
 - Composition : **Def**: La composition est un concept dans lequel une classe est composée d'autres objets. Cela signifie qu'un objet peut contenir des instances d'autres classes en tant qu'attributs. La composition permet de créer des relations complexes entre les objets en les combinant de manière flexible.
 				**Lien**: La classe `CheckMot` utilise les objets `OptionWord`, `OptionDate`, `AllSpecialCharacters` et `CommonSpecialCharacters`. Dans le fichier `main.py`.
+  
 - Interface : Def: Une interface est un contrat définissant un ensemble de méthodes et de signatures que les classes doivent implémenter. Une interface spécifie le comportement que les classes doivent fournir sans se soucier de l'implémentation concrète. L'utilisation d'interfaces permet de définir un contrat clair entre les différentes parties du code.
 			  **Lien**: Il n'y a pas d'interface en python. La classe abstract `CheckMot` il y a une interface `ligne 13`.
+  
 - Méthodes et attributs statiques : Def: Les méthodes et les attributs statiques sont des membres de classe qui sont partagés par toutes les instances d'une classe. Ils sont définis au niveau de la classe plutôt qu'au niveau de l'instance. Les méthodes statiques peuvent être appelées directement sur la classe elle-même, sans avoir besoin d'instancier un objet.
 				    **Lien**: Dans la classe `CheckMot`, il y a une méthode statique `removeAccents` ligne 168.
+  
 - Méthodes et attributs d'objets :**Def**: Les méthodes et les attributs d'objets sont des membres spécifiques à une instance particulière d'une classe. Chaque objet créé à partir d'une classe possède ses propres valeurs d'attributs et peut exécuter des méthodes qui manipulent ces attributs ou effectuent d'autres actions spécifiques à cet objet.
 		                    **Lien**: Utilisation dans le fichier `main.py` ligne 17.
+  
 - Méthodes et attributs de classe : **Def**:  Les méthodes et les attributs de classe sont des membres de classe qui sont partagés par toutes les instances de la classe, mais ils peuvent également être accédés via la classe elle-même. Cependant, contrairement aux méthodes et attributs statiques, les méthodes et attributs de classe peuvent être hérités par les sous-classes et peuvent être modifiés par celles-ci.
 				    **Lien**: Les méthodes `generate_common_special_characters()` et `generate_all_special_characters()` de dans la classe `CheckMot` sont des méthodes de classe.
 
