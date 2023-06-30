@@ -8,7 +8,15 @@ from DatesWork import WorkOnDates
 from Commonchar import CommonSpecialCharacters
 from AllSpecChar import AllSpecialCharacters
 
+from abc import ABC, abstractmethod
 
+##Interface
+class Interface(ABC):
+    @abstractmethod
+    def getPossibleStrings(self):
+       pass
+
+    
 class Checker:
 
     def __init__(self, personalInfo:InfoPersonnel, optionWord:OptionWord, optionDate:OptionDate, optionAllChar:AllSpecialCharacters):

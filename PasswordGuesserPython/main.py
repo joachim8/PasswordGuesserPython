@@ -1,7 +1,6 @@
 from CheckDate import OptionDate
 from CheckWord import OptionWord
 from Commonchar import CommonSpecialCharacters
-from AllSpecChar import AllSpecialCharacters
 from PasswordGuesserPython import PasswordGenerator
 from Info import InfoPersonnel
 from CheckMot import Checker
@@ -19,9 +18,9 @@ def main():
 
    # ,datetime.date(1998, 11, 8)
    checker = Checker( personalInfo, optionWord, optionDate, optionCommonChar)
-   passwordGenerator=PasswordGenerator(checker)
-   print(passwordGenerator.all_combinations)
-   # print(str(len(passwordGenerator.all_combinations)))
+   passwordGenerator = PasswordGenerator(checker)
+   #print(passwordGenerator.all_combinations)
+   print(str(len(passwordGenerator.all_combinations)))
   
 # Using the special variable 
 # __name__
